@@ -1,0 +1,7 @@
+Llama-index==0.9.18
+pymysql
+langchain 
+openai 
+streamlit
+cryptography
+matplotlib
