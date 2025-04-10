@@ -32,7 +32,7 @@ delete web image
 ###### download spark 2.4.8 from https://archive.apache.org/dist/spark/
 ###### update the location of spark in compose file "/Users/mubarak/Documents/Demos/spark248"
 ###### download data
-###### update the location of data in compose file "/Users/mubarak/Documents/Demos/data"
+###### update the location of data in compose file "/Users/sowji/Documents/Demos/data"
 ###### download code
 ###### cd FraudAnalytics
 ###### docker-compose up
