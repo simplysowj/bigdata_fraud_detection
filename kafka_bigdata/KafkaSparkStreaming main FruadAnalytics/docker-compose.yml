@@ -25,8 +25,8 @@ services:
       - 8080:8080
       - 4040:4040
     volumes:
-      - /Users/mubarak/Documents/Demos/spark248:/opt/spark
-      - /Users/mubarak/Documents/Demos/data:/data
+       - ./spark248:/opt/spark
+       - ./data:/data
     environment:
       - SPARK_HOME=/opt/spark
     image: apache/zeppelin:0.10.0
@@ -36,11 +36,8 @@ services:
     container_name: mysql
     privileged: true
     environment:
-      - GRANT_SUDO=yes
-      - MYSQL_USER=jack
-      - MYSQL_PASSWORD=abc
-      - MYSQL_ROOT_PASSWORD=abc
-      - MYSQL_DB= FRAUDSDB
+      - MYSQL_ROOT_PASSWORD=abc        # Set the root password
+      - MYSQL_DB=FRAUDSDB              # Set the initial database
     user: root
     volumes:
       - "./sql/schema.sql:/docker-entrypoint-initdb.d/schema.sql"
